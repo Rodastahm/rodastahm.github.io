@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -10,43 +10,12 @@
 
 <body>
  <script>
-	function copyMir(){
-		var textdata = document.getElementById("copy-mir").innerHTML;
+	function copyElementText(Element){
+		var textdata = document.getElementById(Element).innerHTML;
 		navigator.clipboard.writeText(textdata);
 		alert("Сохранено в буфер обмен. Copied to clipboard.");
 	}
-	
-	function copyBtc(){
-		var textdata = document.getElementById("copy-btc").innerHTML;
-		navigator.clipboard.writeText(textdata);
-		alert("Сохранено в буфер обмен. Copied to clipboard.");
-	}
-	
-	function copyEth(){
-		var textdata = document.getElementById("copy-eth").innerHTML;
-		navigator.clipboard.writeText(textdata);
-		alert("Сохранено в буфер обмен. Copied to clipboard.");
-	}
-	
-	function copyUsdt(){
-		var textdata = document.getElementById("copy-usdt").innerHTML;
-		navigator.clipboard.writeText(textdata);
-		alert("Сохранено в буфер обмен. Copied to clipboard.");
-	}
-	
-	function copyLtc(){
-		var textdata = document.getElementById("copy-ltc").innerHTML;
-		navigator.clipboard.writeText(textdata);
-		alert("Сохранено в буфер обмен. Copied to clipboard.");
-	}
-	
-	function copyDoge(){
-		var textdata = document.getElementById("copy-doge").innerHTML;
-		navigator.clipboard.writeText(textdata);
-		alert("Сохранено в буфер обмен. Copied to clipboard.");
-	}
-			
-  </script>
+</script>
   
 <div class="logo"></div>
 
@@ -57,13 +26,14 @@
 	<p>If you would like to support me, below are the ways you can donate to me. On request I can provide other ways.</p>
 	<ul>
 	<div>
-		<li><img src="./img/mirpay.png" height="32"> Карта Мир (Mir card) <b><a href="#" id="copy-mir" onclick="copyMir()">2200 3005 0382 0050</a></b> </li><br>
+		<li><img src="./img/mirpay.png" height="32"> Карта Мир (Mir card) <b><a href="#" id="copy-mir" onclick="copyElementText('copy-mir')">2200 3005 0382 0050</a></b> </li><br>
 		<li><img src="./img/umoneypay.png" height="32"> Юмани (YooMoney) <b><a href="https://yoomoney.ru/to/410018524624508">410018524624508</a></b> </li><br>  
-		<li><img src="./img/btcpay.png" height="40"> Биткоин (BTC) <b><a href="#" id="copy-btc" onclick="copyBtc()">bc1qzw7x55kcxx0htr2uku94x2c2vmujakvdy2e0l9</a></b> </li><br>
-		<li><img src="./img/ethpay.png" height="40"> Эфир (ETH) <b><a href="#" id="copy-eth" onclick="copyEth()">0xa2C103C639a823cF8D9eBAB303700167Bd9f55d4</a></b></li><br>
-		<li><img src="./img/usdtpay.png" height="40"> Tether USD (USDT) <b><a href="#" id="copy-usdt" onclick="copyUsdt()">0xa2C103C639a823cF8D9eBAB303700167Bd9f55d4</a></b></li><br>
-		<li><img src="./img/ltcpay.png" height="44"> Litecoin (LTC) <b><a href="#" id="copy-ltc" onclick="copyLtc()">Le5Uu2AeVzaswoW1E1hECg3VCF3Q6Dan96</a></b></li><br>
-		<li><img src="./img/dogepay.png" height="44"> Dogecoin (DOGE) <b><a href="#" id="copy-doge" onclick="copyDoge()">DK8Jr85jkEaqf5TbeLLKnud877GEY1S46R</a></b></li><br>
+		<li><img src="./img/btcpay.png" height="40"> Биткоин (BTC) <b><a href="#" id="copy-btc" onclick="copyElementText('copy-btc')">bc1qzw7x55kcxx0htr2uku94x2c2vmujakvdy2e0l9</a></b> </li><br>
+		<li><img src="./img/ethpay.png" height="40"> Эфир (ETH) <b><a href="#" id="copy-eth" onclick="copyElementText('copy-eth')">0xa2C103C639a823cF8D9eBAB303700167Bd9f55d4</a></b></li><br>
+		<li><img src="./img/usdtpay.png" height="40"> Tether USD (USDT) <b><a href="#" id="copy-usdt" onclick="copyElementText('copy-usdt')">0xa2C103C639a823cF8D9eBAB303700167Bd9f55d4</a></b></li><br>
+		<li><img src="./img/tonpay.png" height="40"> Toncoin (TON) <b><a href="#" id="copy-ton" onclick="copyElementText('copy-ton')">0xa2C103C639a823cF8D9eBAB303700167Bd9f55d4</a></b></li><br>
+		<li><img src="./img/ltcpay.png" height="44"> Litecoin (LTC) <b><a href="#" id="copy-ltc" onclick="copyElementText('copy-ltc')">Le5Uu2AeVzaswoW1E1hECg3VCF3Q6Dan96</a></b></li><br>
+		<li><img src="./img/dogepay.png" height="44"> Dogecoin (DOGE) <b><a href="#" id="copy-doge" onclick="copyElementText('copy-doge')">DK8Jr85jkEaqf5TbeLLKnud877GEY1S46R</a></b></li><br>
 	</div>
 	<!--<li><img src="" height="22"> : <b></b></li> -->
 	</ul>
